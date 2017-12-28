@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the FeedPage page.
+ * Generated class for the IntroPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,23 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-feed',
-  templateUrl: 'feed.html',
+  selector: 'page-intro',
+  templateUrl: 'intro.html',
 })
-export class FeedPage {
-
-  //variaveis;
-  public nome_usuario:string = "João da Roça";
+export class IntroPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  public soma(): void{
-    console.log('Função Ok');
-  }
-
   ionViewDidLoad() {
-    this.soma();
+    console.log('ionViewDidLoad IntroPage');
   }
 
 }
