@@ -1,0 +1,8 @@
+{
+  "name": "appcompras",
+  "app_id": "574cec00",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
