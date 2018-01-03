@@ -22,6 +22,8 @@ export class FeedPage {
   //variaveis;
   public nome_usuario:string = "João da Roça";
 
+  public list_movie = new Array<any>();
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private movieProvider: MovieProvider) {
   }
 
@@ -36,6 +38,7 @@ export class FeedPage {
         const response = (data as any);
         const obj = JSON.parse(response._body);
         console.log(obj);
+        this.list_movie = obj.results;
       },
       error=>{
         console.log(error);
